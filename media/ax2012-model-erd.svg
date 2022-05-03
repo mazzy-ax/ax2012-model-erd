@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1485px" preserveAspectRatio="none" style="width:1063px;height:1485px;background:#FFFFFF;" version="1.1" viewBox="0 0 1063 1485" width="1063px" zoomAndPan="magnify"><defs><filter height="300%" id="fs10vbouo9wwg" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="265" x="392.5" y="18.6855">AX 2012 model - AOT nodes only</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="245" x="402.5" y="41.3262">Kernel version 6.3.6000.11008</text><!--MD5=[664cc12993fc0a854263364aa0c2a878]
+class ElementTypes--><rect codeLine="11" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="96.4375" id="ElementTypes" style="stroke:#A80036;stroke-width:1.5;" width="230" x="164" y="223.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="239.5" y="240.7383">ElementTypes</text><line style="stroke:#A80036;stroke-width:1.5;" x1="165" x2="393" y1="248.375" y2="248.375"/><ellipse cx="175" cy="259.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="184" y="263.7939">ElementType [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="165" x2="393" y1="270.2109" y2="270.2109"/><ellipse cx="175" cy="281.2109" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="184" y="285.6299">ElementTypeName [VARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="184" y="299.4658">ParentType [INT, default: 0]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="184" y="313.3018">TreeNodeName [VARCHAR 255]</text><!--MD5=[a97cfd095b0077d714bcddc8cbc855aa]
+class Layer--><rect codeLine="19" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="68.7656" id="Layer" style="stroke:#A80036;stroke-width:1.5;" width="156" x="751" y="236.7813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="30" x="814" y="254.2383">Layer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="752" x2="906" y1="261.875" y2="261.875"/><ellipse cx="762" cy="272.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="771" y="277.2939">Id [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="752" x2="906" y1="283.7109" y2="283.7109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="757" y="299.1299">Name [NVARCHAR 3, not null]</text><!--MD5=[224f0e78421c9995371213109a68f1af]
+class LayerVersioning--><rect codeLine="25" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="110.2734" id="LayerVersioning" style="stroke:#A80036;stroke-width:1.5;" width="208" x="725" y="52.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="89" x="784.5" y="69.7383">LayerVersioning</text><line style="stroke:#A80036;stroke-width:1.5;" x1="726" x2="932" y1="77.375" y2="77.375"/><ellipse cx="736" cy="88.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="745" y="92.7939">LayerId [INT, not null, default: 14]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="726" x2="932" y1="99.2109" y2="99.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="196" x="731" y="114.6299">AggregatedVersionNumber [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="731" y="128.4658">CheckDigit [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="731" y="142.3018">ConsistencyData [VARBINARY MAX]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="54" x="731" y="156.1377">IsDirty [INT]</text><!--MD5=[7e20e022571e30ec1001cf6eabd7f3e2]
+class Model--><rect codeLine="34" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="201.2891" id="Model" style="stroke:#A80036;stroke-width:1.5;" width="213" x="490.5" y="480.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="580.5" y="497.7383">Model</text><line style="stroke:#A80036;stroke-width:1.5;" x1="491.5" x2="702.5" y1="505.375" y2="505.375"/><ellipse cx="501.5" cy="516.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="510.5" y="520.7939">Id [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="491.5" x2="702.5" y1="527.2109" y2="527.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="496.5" y="542.6299">LayerId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="201" x="496.5" y="556.4658">State [NVARCHAR 20, not null, default: ""]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="496.5" y="570.3018">CreatedDateTime [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="496.5" y="584.1377">ModifiedDateTime [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="496.5" y="597.9736">ModelGroupId [INT]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="496.5" y="611.8096">MarkedForRemoval [BIT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="496.5" y="625.6455">InstalledBy [NVARCHAR 20]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="496.5" y="639.4814">ChangedBy [NVARCHAR 20]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="54" x="496.5" y="653.3174">IsDirty [INT]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="491.5" x2="702.5" y1="659.7344" y2="659.7344"/><line style="stroke:#A80036;stroke-width:1.0;" x1="491.5" x2="702.5" y1="661.7344" y2="661.7344"/><ellipse cx="501.5" cy="670.7344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="510.5" y="675.1533">(Id, LayerId) [unique]</text><!--MD5=[9a43980204564d62eab7ec962d3ccefd]
+class ModelElement--><rect codeLine="50" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="201.2891" id="ModelElement" style="stroke:#A80036;stroke-width:1.5;" width="267" x="145.5" y="480.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="239.5" y="497.7383">ModelElement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="146.5" x2="411.5" y1="505.375" y2="505.375"/><ellipse cx="156.5" cy="516.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="165.5" y="520.7939">ElementHandle [INT, not null, increment]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="146.5" x2="411.5" y1="527.2109" y2="527.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="165.5" y="542.6299">ElementType [INT, not null]</text><ellipse cx="156.5" cy="552.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="165.5" y="556.4658">RootHandle [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="165.5" y="570.3018">ParentHandle [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="165.5" y="584.1377">Name [NVARCHAR 255, not null, default: ""]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="165.5" y="597.9736">AxId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="165.5" y="611.8096">ParentId [INT, default: 0]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="165.5" y="625.6455">Origin [UNIQUEIDENTIFIER]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="165.5" y="639.4814">PartOfInheritance [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="146.5" x2="411.5" y1="645.8984" y2="645.8984"/><line style="stroke:#A80036;stroke-width:1.0;" x1="146.5" x2="411.5" y1="647.8984" y2="647.8984"/><ellipse cx="156.5" cy="656.8984" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="241" x="165.5" y="661.3174">(ElementType, AxId, ParentHandle, Name) [unique]</text><ellipse cx="156.5" cy="670.7344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="213" x="165.5" y="675.1533">(ElementType, Name, ParentHandle) [unique]</text><!--MD5=[2bae5d354eb02955eba4afb1e845b0f1]
+class ModelElementData--><rect codeLine="66" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="262.4688" id="ModelElementData" style="stroke:#A80036;stroke-width:1.5;" width="250" x="154" y="859.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="105" x="226.5" y="876.7383">ModelElementData</text><line style="stroke:#A80036;stroke-width:1.5;" x1="155" x2="403" y1="884.375" y2="884.375"/><ellipse cx="165" cy="895.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="174" y="899.7939">ElementHandle [INT, not null]</text><ellipse cx="165" cy="909.2109" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="174" y="913.6299">LayerId [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="155" x2="403" y1="920.0469" y2="920.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="160" y="935.4658">ParentHandle [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="68" x="160" y="949.3018">LegacyId [INT]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="160" y="963.1377">Properties [VARBINARY MAX]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="160" y="976.9736">FileHeader [VARBINARY MAX]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="188" x="160" y="990.8096">BASEVERSION [INT, not null, default: 1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="160" y="1004.6455">VERSION [INT, not null, default: 1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="160" y="1018.4814">SAVECOUNT [INT, not null, default: 1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="216" x="160" y="1032.3174">CONSISTENCYDATA [INT, not null, default: 1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="160" y="1046.1533">MODIFIEDDATETIME [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="237" x="160" y="1059.9893">MODIFIEDBY [NVARCHAR 8, not null, default: "?"]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="194" x="160" y="1073.8252">CREATEDDATETIME [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="238" x="160" y="1087.6611">CREATEDBY [NVARCHAR 8, not null, default: "?"]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="190" x="160" y="1101.4971">ElementVersion [INT, not null, default: 1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="160" y="1115.333">ModelId [INT, not null]</text><!--MD5=[2cbfa4464326f843918f181dd6e30c82]
+class ModelElementLabel--><rect codeLine="86" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="137.9453" id="ModelElementLabel" style="stroke:#A80036;stroke-width:1.5;" width="244" x="7" y="1274.7813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="74" y="1292.2383">ModelElementLabel</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="250" y1="1299.875" y2="1299.875"/><ellipse cx="18" cy="1310.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="27" y="1315.2939">ElementHandle [INT, not null]</text><ellipse cx="18" cy="1324.7109" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="27" y="1329.1299">LayerId [INT, not null]</text><ellipse cx="18" cy="1338.5469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="27" y="1342.9658">LabelId [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="250" y1="1349.3828" y2="1349.3828"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="13" y="1364.8018">Text [NVARCHAR 2048, not null, default: ""]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="232" x="13" y="1378.6377">Comment [NVARCHAR 2048, not null, default: ""]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="216" x="13" y="1392.4736">Module [NVARCHAR 255, not null, default: ""]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="230" x="13" y="1406.3096">Language [NVARCHAR 255, not null, default: ""]</text><!--MD5=[c29b85fb723e2dfe608cdbc7387c34bf]
+class ModelGroup--><rect codeLine="97" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="54.9297" id="ModelGroup" style="stroke:#A80036;stroke-width:1.5;" width="98" x="578" y="243.7813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="67" x="593.5" y="261.2383">ModelGroup</text><line style="stroke:#A80036;stroke-width:1.5;" x1="579" x2="675" y1="268.875" y2="268.875"/><ellipse cx="589" cy="279.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="598" y="284.2939">Id [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.5;" x1="579" x2="675" y1="290.7109" y2="290.7109"/><!--MD5=[9844301892e50b74f6234f0ef6a6a79b]
+class ModelManifest--><rect codeLine="101" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="256.6328" id="ModelManifest" style="stroke:#A80036;stroke-width:1.5;" width="197" x="570.5" y="1215.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="629.5" y="1232.7383">ModelManifest</text><line style="stroke:#A80036;stroke-width:1.5;" x1="571.5" x2="766.5" y1="1240.375" y2="1240.375"/><ellipse cx="581.5" cy="1251.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="590.5" y="1255.7939">Id [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="571.5" x2="766.5" y1="1262.2109" y2="1262.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="576.5" y="1277.6299">ModelId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="576.5" y="1291.4658">Name [NVARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="576.5" y="1305.3018">DisplayName [NVARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="576.5" y="1319.1377">Description [NVARCHAR 255]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="167" x="576.5" y="1332.9736">Publisher [NVARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="576.5" y="1346.8096">Signed [BIT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="576.5" y="1360.6455">CategoryId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="576.5" y="1374.4814">InstallMode [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="576.5" y="1388.3174">VersionMajor [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="576.5" y="1402.1533">VersionMinor [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="576.5" y="1415.9893">VersionRevision [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="576.5" y="1429.8252">VersionBuildNo [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="576.5" y="1443.6611">Details [XML, not null, default: ""]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="571.5" x2="766.5" y1="1450.0781" y2="1450.0781"/><line style="stroke:#A80036;stroke-width:1.0;" x1="571.5" x2="766.5" y1="1452.0781" y2="1452.0781"/><ellipse cx="581.5" cy="1461.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="590.5" y="1465.4971">(Name, Publisher) [unique]</text><!--MD5=[b6104f8b22c75ed4ccd478bcb7988718]
+class ModelManifestCategory--><rect codeLine="121" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="68.7656" id="ModelManifestCategory" style="stroke:#A80036;stroke-width:1.5;" width="176" x="676" y="955.7813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="128" x="700" y="973.2383">ModelManifestCategory</text><line style="stroke:#A80036;stroke-width:1.5;" x1="677" x2="851" y1="980.875" y2="980.875"/><ellipse cx="687" cy="991.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="696" y="996.2939">Id [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="677" x2="851" y1="1002.7109" y2="1002.7109"/><ellipse cx="687" cy="1013.7109" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="696" y="1018.1299">Name [NVARCHAR 20, not null]</text><!--MD5=[4082c8f639f04c3c4de36c75b07f67cd]
+class ModelOperation--><rect codeLine="127" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="68.7656" id="ModelOperation" style="stroke:#A80036;stroke-width:1.5;" width="162" x="887" y="955.7813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="87" x="924.5" y="973.2383">ModelOperation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="888" x2="1048" y1="980.875" y2="980.875"/><ellipse cx="898" cy="991.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="907" y="996.2939">Id [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="888" x2="1048" y1="1002.7109" y2="1002.7109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="893" y="1018.1299">Name [NVARCHAR 20, not null]</text><!--MD5=[e6bff8fda93e3a546183c83301d374f2]
+class ModelOperationHistory--><rect codeLine="133" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="400.8281" id="ModelOperationHistory" style="stroke:#A80036;stroke-width:1.5;" width="201" x="738.5" y="380.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="125" x="776.5" y="397.7383">ModelOperationHistory</text><line style="stroke:#A80036;stroke-width:1.5;" x1="739.5" x2="938.5" y1="405.375" y2="405.375"/><ellipse cx="749.5" cy="416.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="758.5" y="420.7939">Id [INT, not null, increment]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="739.5" x2="938.5" y1="427.2109" y2="427.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="744.5" y="442.6299">OperationId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="744.5" y="456.4658">OperationDateTime [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="744.5" y="470.3018">ModelManifestId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="744.5" y="484.1377">Name [NVARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="744.5" y="497.9736">DisplayName [NVARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="744.5" y="511.8096">Description [NVARCHAR 255]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="167" x="744.5" y="525.6455">Publisher [NVARCHAR 40, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="744.5" y="539.4814">Signed [BIT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="744.5" y="553.3174">CategoryId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="744.5" y="567.1533">InstallMode [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="744.5" y="580.9893">VersionMajor [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="744.5" y="594.8252">VersionMinor [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="744.5" y="608.6611">VersionRevision [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="744.5" y="622.4971">VersionBuildNo [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="744.5" y="636.333">Details [XML, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="744.5" y="650.1689">ModelId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="744.5" y="664.0049">LayerId [INT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="744.5" y="677.8408">State [NVARCHAR 20, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="744.5" y="691.6768">CreatedDateTime [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="744.5" y="705.5127">ModifiedDateTime [DATETIME, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="744.5" y="719.3486">ModelGroupId [INT]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="744.5" y="733.1846">MarkedForRemoval [BIT, not null]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="744.5" y="747.0205">InstalledBy [NVARCHAR 20]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="744.5" y="760.8564">ChangedBy [NVARCHAR 20]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="54" x="744.5" y="774.6924">IsDirty [INT]</text><!--MD5=[5b56c63c6bb84a92a60f870299189de1]
+class Sources--><rect codeLine="163" fill="#FEFECE" filter="url(#fs10vbouo9wwg)" height="82.6016" id="Sources" style="stroke:#A80036;stroke-width:1.5;" width="165" x="286.5" y="1302.2813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="46" x="346" y="1319.7383">Sources</text><line style="stroke:#A80036;stroke-width:1.5;" x1="287.5" x2="450.5" y1="1327.375" y2="1327.375"/><ellipse cx="297.5" cy="1338.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="306.5" y="1342.7939">SourceHandle [INT, not null]</text><ellipse cx="297.5" cy="1352.2109" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="306.5" y="1356.6299">LayerId [INT, not null]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="287.5" x2="450.5" y1="1363.0469" y2="1363.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="153" x="292.5" y="1378.4658">SourceText [VARBINARY MAX]</text><!--MD5=[fa065b5e5689ae47d94342e438b0ba31]
+link LayerVersioning to Layer--><path codeLine="170" d="M829,170.8112 C829,190.0413 829,210.7413 829,228.2413 " fill="none" id="LayerVersioning-Layer" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="833" x2="825" y1="232.5612" y2="232.5612"/><line style="stroke:#A80036;stroke-width:1.0;" x1="833" x2="825" y1="229.5612" y2="229.5612"/><line style="stroke:#A80036;stroke-width:1.0;" x1="829" x2="829" y1="228.5612" y2="236.5612"/><line style="stroke:#A80036;stroke-width:1.0;" x1="829" x2="829" y1="173.6713" y2="162.6713"/><ellipse cx="829" cy="173.6713" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.0;fill:none;"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="825" x2="833" y1="166.6713" y2="166.6713"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="784.4406" y="183.8968">LayerId</text><!--MD5=[19f0469f9e03ba8b7e0e600a4efe5f87]
+link Layer to Model--><path codeLine="171" d="M785.33,311.5213 C764.67,331.1613 740.35,355.8912 721,380.2813 C698.2,409.0113 676.11,442.1813 657.05,473.1313 " fill="none" id="Layer-Model" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="656.9504" x2="659.607" y1="473.2843" y2="480.1113"/><line style="stroke:#A80036;stroke-width:1.0;" x1="656.9504" x2="645.953" y1="473.2843" y2="480.1113"/><line style="stroke:#A80036;stroke-width:1.0;" x1="656.9504" x2="652.78" y1="473.2843" y2="480.1113"/><line style="stroke:#A80036;stroke-width:1.0;" x1="785.6757" x2="791.1587" y1="305.6899" y2="311.5155"/><line style="stroke:#A80036;stroke-width:1.0;" x1="783.4911" x2="788.9741" y1="307.746" y2="313.5716"/><line style="stroke:#A80036;stroke-width:1.0;" x1="785.5044" x2="791.33" y1="311.3442" y2="305.8612"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="613.4428" y="469.2887">LayerId</text><!--MD5=[e79c142e724203dbb87e19f810003bd5]
+link Layer to ModelOperationHistory--><path codeLine="172" d="M830.36,314.1512 C830.89,330.4813 831.54,350.4713 832.25,372.0912 " fill="none" id="Layer-ModelOperationHistory" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="832.253" x2="840.5059" y1="372.1354" y2="380.1312"/><line style="stroke:#A80036;stroke-width:1.0;" x1="832.253" x2="824.5141" y1="372.1354" y2="380.1312"/><line style="stroke:#A80036;stroke-width:1.0;" x1="832.253" x2="832.51" y1="372.1354" y2="380.1312"/><line style="stroke:#A80036;stroke-width:1.0;" x1="826.2306" x2="834.2264" y1="310.1977" y2="309.9407"/><line style="stroke:#A80036;stroke-width:1.0;" x1="826.3269" x2="834.3228" y1="313.1961" y2="312.9391"/><line style="stroke:#A80036;stroke-width:1.0;" x1="830.357" x2="830.1" y1="314.0671" y2="306.0712"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="789.4362" y="369.4862">LayerId</text><!--MD5=[7e75ed13e15bd7edea44e735b9cd51d9]
+link Model to ModelManifest--><path codeLine="173" d="M607.14,688.9813 C620.02,825.1313 642.26,1060.1113 656.27,1208.1813 " fill="none" id="Model-ModelManifest" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="660.537" x2="652.5723" y1="1210.8035" y2="1211.5543"/><line style="stroke:#A80036;stroke-width:1.0;" x1="660.2554" x2="652.2907" y1="1207.8168" y2="1208.5675"/><line style="stroke:#A80036;stroke-width:1.0;" x1="656.1792" x2="656.93" y1="1207.1966" y2="1215.1613"/><line style="stroke:#A80036;stroke-width:1.0;" x1="602.843" x2="610.8077" y1="686.019" y2="685.2682"/><line style="stroke:#A80036;stroke-width:1.0;" x1="603.1246" x2="611.0893" y1="689.0057" y2="688.255"/><line style="stroke:#A80036;stroke-width:1.0;" x1="607.2008" x2="606.45" y1="689.6259" y2="681.6613"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="609.8234" y="1204.353">ModelId</text><!--MD5=[93e15325dea5a89888cdded0492120e9]
+link Model to ModelElementData--><path codeLine="174" d="M519.1,687.7613 C496.42,718.1513 471.44,751.2013 448,781.2813 C429.89,804.5313 410.39,829.0013 391.31,852.6813 " fill="none" id="Model-ModelElementData" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="391.2324" x2="392.419" y1="852.7823" y2="859.0013"/><line style="stroke:#A80036;stroke-width:1.0;" x1="391.2324" x2="379.981" y1="852.7823" y2="859.0013"/><line style="stroke:#A80036;stroke-width:1.0;" x1="391.2324" x2="386.2" y1="852.7823" y2="859.0013"/><line style="stroke:#A80036;stroke-width:1.0;" x1="518.302" x2="524.714" y1="682.1352" y2="686.9192"/><line style="stroke:#A80036;stroke-width:1.0;" x1="516.508" x2="522.92" y1="684.5397" y2="689.3237"/><line style="stroke:#A80036;stroke-width:1.0;" x1="519.116" x2="523.9" y1="687.7332" y2="681.3213"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="422" y="825.7764">[update: cascade]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="456.0064" y="703.1289">Id, LayerId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="294.6514" y="848.4409">ModelId, LayerId</text><!--MD5=[2bd8626fe7348d74745a2c071365e997]
+link ModelElement to ModelElement--><path codeLine="175" d="M412.83,541.3613 C433.46,547.3113 447.5,560.4513 447.5,580.7813 C447.5,598.4113 436.94,610.6313 420.68,617.4513 " fill="none" id="ModelElement-to-ModelElement" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="420.3815" x2="412.83" y1="617.5604" y2="627.7528"/><line style="stroke:#A80036;stroke-width:1.0;" x1="420.3815" x2="412.83" y1="617.5604" y2="612.6497"/><line style="stroke:#A80036;stroke-width:1.0;" x1="420.3815" x2="412.83" y1="617.5604" y2="620.2013"/><!--MD5=[5119a195dbae17a07d5d24395796a855]
+link ModelElement to ModelElementData--><path codeLine="176" d="M279,689.7113 C279,739.1513 279,798.3413 279,851.0013 " fill="none" id="ModelElement-ModelElementData" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="287" y1="851.0513" y2="859.0513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="271" y1="851.0513" y2="859.0513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="279" y1="851.0513" y2="859.0513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="275" x2="283" y1="685.4713" y2="685.4713"/><line style="stroke:#A80036;stroke-width:1.0;" x1="275" x2="283" y1="688.4713" y2="688.4713"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="279" y1="689.4713" y2="681.4713"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="280" y="825.7764">[delete: cascade]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="188.4563" y="848.4937">ElementHandle</text><!--MD5=[cebba207cf023dda4779285e1ab717f5]
+link ModelElementData to ModelElementData--><path codeLine="177" d="M404.11,960.7213 C424.77,964.9013 439,974.7613 439,990.2813 C439,1003.7413 428.3,1012.9413 411.98,1017.8712 " fill="none" id="ModelElementData-to-ModelElementData" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="411.8711" x2="405.5652" y1="1017.901" y2="1025.6621"/><line style="stroke:#A80036;stroke-width:1.0;" x1="411.8711" x2="402.6548" y1="1017.901" y2="1014.0204"/><line style="stroke:#A80036;stroke-width:1.0;" x1="411.8711" x2="404.11" y1="1017.901" y2="1019.8413"/><ellipse cx="417.692" cy="1016.4458" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.0;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108" x="459" y="971.2764">there are elements</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="132" x="449" y="987.6279">whose parent specified</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119" x="455.5" y="1003.9795">in the ModelElement</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="496.5" y="1020.3311">only !!!</text><!--MD5=[edbe674d9f79b8e01115608310a68c15]
+link ModelElementData to ModelElementLabel--><path codeLine="178" d="M213.74,1129.0313 C210.4,1136.5313 207.13,1143.9913 204,1151.2813 C187.82,1188.9513 171.06,1231.3513 157.51,1266.6613 " fill="none" id="ModelElementData-ModelElementLabel" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="158.419" x2="154.49" y1="1264.2669" y2="1274.5413"/><ellipse cx="158.419" cy="1264.2669" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.0;fill:none;"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="159.6549" x2="152.1826" y1="1272.2338" y2="1269.3764"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="211.8173" x2="219.123" y1="1123.5343" y2="1126.794"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="210.5949" x2="217.9006" y1="1126.2739" y2="1129.5337"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="213.8403" x2="217.1" y1="1128.817" y2="1121.5113"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="209" y="1165.7764">[delete: cascade]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="209" y="1182.1279">[update: cascade]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="71.5323" y="1143.0522">ElementHandle, LayerId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="12.003" y="1264.0919">ElementHandle, LayerId</text><!--MD5=[5d9029d28803dd71eefb2e5b5116c372]
+link ModelElementData to Sources--><path codeLine="179" d="M314.41,1129.5713 C329.29,1187.7013 345.65,1251.5813 356.54,1294.1113 " fill="none" id="ModelElementData-Sources" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="355.8374" x2="358.57" y1="1291.4061" y2="1302.0613"/><ellipse cx="355.8374" cy="1291.4061" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.0;fill:none;"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="361.4509" x2="353.7017" y1="1297.193" y2="1299.1803"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="309.4991" x2="317.2483" y1="1126.5395" y2="1124.5522"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="310.2443" x2="317.9935" y1="1129.4455" y2="1127.4581"/><line style="stroke:#A80036;stroke-width:1.0;fill:none;" x1="314.3673" x2="312.38" y1="1129.4205" y2="1121.6712"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="332" y="1165.7764">[delete: cascade]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="332" y="1182.1279">[update: cascade]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="318.2988" y="1143.2215">ElementHandle, LayerId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="367.691" y="1291.3836">SourceHandle, LayerId</text><!--MD5=[71a80d02d59a1b80dfe50170cfa5fbf6]
+link ModelGroup to Model--><path codeLine="180" d="M623.59,307.2313 C619.7,347.1312 613.14,414.3612 607.51,472.0613 " fill="none" id="ModelGroup-Model" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="607.492" x2="614.6827" y1="472.1786" y2="480.1413"/><line style="stroke:#A80036;stroke-width:1.0;" x1="607.492" x2="598.7573" y1="472.1786" y2="480.1413"/><line style="stroke:#A80036;stroke-width:1.0;" x1="607.492" x2="606.72" y1="472.1786" y2="480.1413"/><line style="stroke:#A80036;stroke-width:1.0;" x1="620.0227" x2="627.9854" y1="302.6266" y2="303.3986"/><line style="stroke:#A80036;stroke-width:1.0;" x1="619.7332" x2="627.6959" y1="305.6126" y2="306.3846"/><line style="stroke:#A80036;stroke-width:1.0;" x1="623.618" x2="624.39" y1="306.9939" y2="299.0313"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="524.4017" y="469.321">ModelGroupId</text><!--MD5=[81b4347efb3806b7df06d6da4626e7af]
+link ModelGroup to ModelOperationHistory--><path codeLine="181" d="M658.29,305.0413 C677.42,325.8013 701.8,353.6813 721,380.2813 C725.28,386.2113 729.55,392.3013 733.78,398.5113 " fill="none" id="ModelGroup-ModelOperationHistory" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="733.8764" x2="738.36" y1="398.6558" y2="400.7976"/><line style="stroke:#A80036;stroke-width:1.0;" x1="733.8764" x2="738.36" y1="398.6558" y2="409.7649"/><line style="stroke:#A80036;stroke-width:1.0;" x1="733.8764" x2="738.36" y1="398.6558" y2="405.2813"/><line style="stroke:#A80036;stroke-width:1.0;" x1="652.5685" x2="658.4425" y1="304.7538" y2="299.3228"/><line style="stroke:#A80036;stroke-width:1.0;" x1="654.6051" x2="660.4791" y1="306.9565" y2="301.5255"/><line style="stroke:#A80036;stroke-width:1.0;" x1="658.221" x2="652.79" y1="304.9753" y2="299.1012"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="650.6688" y="392.7555">ModelGroupId</text><!--MD5=[b3a16a962b3f02cc6832761faa49b4d5]
+link ElementTypes to ElementTypes--><path codeLine="182" d="M394.09,257.5113 C414.64,259.3013 429,263.8912 429,271.2813 C429,277.6312 418.4,281.9113 402.37,284.1312 " fill="none" id="ElementTypes-to-ElementTypes" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="402.0409" x2="394.09" y1="284.1662" y2="293.0021"/><line style="stroke:#A80036;stroke-width:1.0;" x1="402.0409" x2="394.09" y1="284.1662" y2="277.1004"/><line style="stroke:#A80036;stroke-width:1.0;" x1="402.0409" x2="394.09" y1="284.1662" y2="285.0513"/><!--MD5=[48fe151ae635a52d6706d6ddda3b1817]
+link ElementTypes to ModelElement--><path codeLine="183" d="M279,327.5613 C279,367.7213 279,423.3712 279,472.1713 " fill="none" id="ElementTypes-ModelElement" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="287" y1="472.2613" y2="480.2613"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="271" y1="472.2613" y2="480.2613"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="279" y1="472.2613" y2="480.2613"/><line style="stroke:#A80036;stroke-width:1.0;" x1="275" x2="283" y1="323.3212" y2="323.3212"/><line style="stroke:#A80036;stroke-width:1.0;" x1="275" x2="283" y1="326.3212" y2="326.3212"/><line style="stroke:#A80036;stroke-width:1.0;" x1="279" x2="279" y1="327.3212" y2="319.3212"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="200.0906" y="469.4502">ElementType</text><!--MD5=[61496d333aef5e8175b2fc75959afe64]
+link ModelOperationHistory to ModelOperation--><path codeLine="184" d="M904.67,789.2213 C923.74,849.4713 942.68,909.2813 954.8,947.5913 " fill="none" id="ModelOperationHistory-ModelOperation" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="959.8867" x2="952.2595" y1="950.4108" y2="952.8246"/><line style="stroke:#A80036;stroke-width:1.0;" x1="958.9815" x2="951.3543" y1="947.5506" y2="949.9644"/><line style="stroke:#A80036;stroke-width:1.0;" x1="954.8662" x2="957.28" y1="947.8041" y2="955.4313"/><line style="stroke:#A80036;stroke-width:1.0;" x1="904.5938" x2="894.5529" y1="788.9784" y2="781.3513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="904.5938" x2="909.8071" y1="788.9784" y2="781.3513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="904.5938" x2="902.18" y1="788.9784" y2="781.3513"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="837.2646" y="802.3513">OperationId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="10" x="944.2834" y="944.8139">Id</text><!--MD5=[c7513b1d14a782a02852995b6907e302]
+link ModelOperationHistory to ModelManifestCategory--><path codeLine="185" d="M800.82,789.2213 C789.78,849.2213 778.82,908.7813 771.76,947.1113 " fill="none" id="ModelOperationHistory-ModelManifestCategory" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="774.8856" x2="767.0167" y1="952.218" y2="950.7756"/><line style="stroke:#A80036;stroke-width:1.0;" x1="775.4265" x2="767.5576" y1="949.2672" y2="947.8248"/><line style="stroke:#A80036;stroke-width:1.0;" x1="771.6724" x2="770.23" y1="947.5624" y2="955.4313"/><line style="stroke:#A80036;stroke-width:1.0;" x1="800.8112" x2="794.4041" y1="789.2171" y2="781.3513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="800.8112" x2="810.1359" y1="789.2171" y2="781.3513"/><line style="stroke:#A80036;stroke-width:1.0;" x1="800.8112" x2="802.27" y1="789.2171" y2="781.3513"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="737.836" y="802.3513">CategoryId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="10" x="760.4645" y="944.8139">Id</text><!--MD5=[1b14c0666c06054c432942a47a6a1e0c]
+link ModelManifestCategory to ModelManifest--><path codeLine="186" d="M752.8,1032.7313 C741.2,1075.6613 722.44,1145.0513 705.61,1207.3213 " fill="none" id="ModelManifestCategory-ModelManifest" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="705.548" x2="711.1827" y1="1207.5485" y2="1215.2713"/><line style="stroke:#A80036;stroke-width:1.0;" x1="705.548" x2="695.7373" y1="1207.5485" y2="1215.2713"/><line style="stroke:#A80036;stroke-width:1.0;" x1="705.548" x2="703.46" y1="1207.5485" y2="1215.2713"/><line style="stroke:#A80036;stroke-width:1.0;" x1="749.986" x2="757.7096" y1="1027.8009" y2="1029.8853"/><line style="stroke:#A80036;stroke-width:1.0;" x1="749.2043" x2="756.928" y1="1030.6973" y2="1032.7817"/><line style="stroke:#A80036;stroke-width:1.0;" x1="752.8056" x2="754.89" y1="1032.7049" y2="1024.9813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="707.449" y="1204.4697">CategoryId</text><!--MD5=[1bcbe88108addb97e934ba329e91d2a6]
+@startuml ax2012-model-erd
+
+remove @unlinked
+hide circle
+
+title
+AX 2012 model - AOT nodes only
+Kernel version 6.3.6000.11008
+end title
+
+
+Entity ElementTypes {
+  *ElementType [INT, not null]
+  ..
+  *ElementTypeName [VARCHAR 40, not null]
+  ParentType [INT, default: 0]
+  TreeNodeName [VARCHAR 255]
+}
+
+Entity Layer {
+  *Id [INT, not null]
+  ..
+  Name [NVARCHAR 3, not null]
+}
+
+Entity LayerVersioning {
+  *LayerId [INT, not null, default: 14]
+  ..
+  AggregatedVersionNumber [INT, not null]
+  CheckDigit [INT, not null]
+  ConsistencyData [VARBINARY MAX]
+  IsDirty [INT]
+}
+
+Entity Model {
+  *Id [INT, not null]
+  ..
+  LayerId [INT, not null]
+  State [NVARCHAR 20, not null, default: ""]
+  CreatedDateTime [DATETIME, not null]
+  ModifiedDateTime [DATETIME, not null]
+  ModelGroupId [INT]
+  MarkedForRemoval [BIT, not null]
+  InstalledBy [NVARCHAR 20]
+  ChangedBy [NVARCHAR 20]
+  IsDirty [INT]
+  ==
+  *(Id, LayerId) [unique]
+}
+
+Entity ModelElement {
+  *ElementHandle [INT, not null, increment]
+  ..
+  ElementType [INT, not null]
+  *RootHandle [INT, not null]
+  ParentHandle [INT, not null]
+  Name [NVARCHAR 255, not null, default: ""]
+  AxId [INT, not null]
+  ParentId [INT, default: 0]
+  Origin [UNIQUEIDENTIFIER]
+  PartOfInheritance [INT, not null]
+  ==
+  *(ElementType, AxId, ParentHandle, Name) [unique]
+  *(ElementType, Name, ParentHandle) [unique]
+}
+
+Entity ModelElementData {
+  *ElementHandle [INT, not null]
+  *LayerId [INT, not null]
+  ..
+  ParentHandle [INT, not null]
+  LegacyId [INT]
+  Properties [VARBINARY MAX]
+  FileHeader [VARBINARY MAX]
+  BASEVERSION [INT, not null, default: 1]
+  VERSION [INT, not null, default: 1]
+  SAVECOUNT [INT, not null, default: 1]
+  CONSISTENCYDATA [INT, not null, default: 1]
+  MODIFIEDDATETIME [DATETIME, not null]
+  MODIFIEDBY [NVARCHAR 8, not null, default: "?"]
+  CREATEDDATETIME [DATETIME, not null]
+  CREATEDBY [NVARCHAR 8, not null, default: "?"]
+  ElementVersion [INT, not null, default: 1]
+  ModelId [INT, not null]
+}
+
+Entity ModelElementLabel {
+  *ElementHandle [INT, not null]
+  *LayerId [INT, not null]
+  *LabelId [INT, not null]
+  ..
+  Text [NVARCHAR 2048, not null, default: ""]
+  Comment [NVARCHAR 2048, not null, default: ""]
+  Module [NVARCHAR 255, not null, default: ""]
+  Language [NVARCHAR 255, not null, default: ""]
+}
+
+Entity ModelGroup {
+  *Id [INT, not null]
+}
+
+Entity ModelManifest {
+  *Id [INT, not null]
+  ..
+  ModelId [INT, not null]
+  Name [NVARCHAR 40, not null]
+  DisplayName [NVARCHAR 40, not null]
+  Description [NVARCHAR 255]
+  Publisher [NVARCHAR 40, not null]
+  Signed [BIT, not null]
+  CategoryId [INT, not null]
+  InstallMode [INT, not null]
+  VersionMajor [INT, not null]
+  VersionMinor [INT, not null]
+  VersionRevision [INT, not null]
+  VersionBuildNo [INT, not null]
+  Details [XML, not null, default: ""]
+  ==
+  *(Name, Publisher) [unique]
+}
+
+Entity ModelManifestCategory {
+  *Id [INT, not null]
+  ..
+  *Name [NVARCHAR 20, not null]
+}
+
+Entity ModelOperation {
+  *Id [INT, not null]
+  ..
+  Name [NVARCHAR 20, not null]
+}
+
+Entity ModelOperationHistory {
+  *Id [INT, not null, increment]
+  ..
+  OperationId [INT, not null]
+  OperationDateTime [DATETIME, not null]
+  ModelManifestId [INT, not null]
+  Name [NVARCHAR 40, not null]
+  DisplayName [NVARCHAR 40, not null]
+  Description [NVARCHAR 255]
+  Publisher [NVARCHAR 40, not null]
+  Signed [BIT, not null]
+  CategoryId [INT, not null]
+  InstallMode [INT, not null]
+  VersionMajor [INT, not null]
+  VersionMinor [INT, not null]
+  VersionRevision [INT, not null]
+  VersionBuildNo [INT, not null]
+  Details [XML, not null]
+  ModelId [INT, not null]
+  LayerId [INT, not null]
+  State [NVARCHAR 20, not null]
+  CreatedDateTime [DATETIME, not null]
+  ModifiedDateTime [DATETIME, not null]
+  ModelGroupId [INT]
+  MarkedForRemoval [BIT, not null]
+  InstalledBy [NVARCHAR 20]
+  ChangedBy [NVARCHAR 20]
+  IsDirty [INT]
+}
+
+Entity Sources {
+  *SourceHandle [INT, not null]
+  *LayerId [INT, not null]
+  ..
+  SourceText [VARBINARY MAX]
+}
+
+LayerVersioning "LayerId" |o- -|| Layer
+Layer ||- -{ "LayerId" Model
+Layer ||- -{ "LayerId" ModelOperationHistory
+Model ||- -|| "ModelId" ModelManifest
+Model "Id, LayerId" ||- -{ "ModelId, LayerId" ModelElementData : [update: cascade]
+ModelElement - -{ ModelElement
+ModelElement ||- -{ "ElementHandle" ModelElementData : [delete: cascade]
+ModelElementData - -o{ ModelElementData : there are elements\n whose parent specified\n in the ModelElement\n only !!!
+ModelElementData "ElementHandle, LayerId" ||- -o| "ElementHandle, LayerId" ModelElementLabel : [delete: cascade]\n [update: cascade]
+ModelElementData "ElementHandle, LayerId" ||- -o| "SourceHandle, LayerId" Sources : [delete: cascade]\n [update: cascade]
+ModelGroup ||- -{ "ModelGroupId" Model
+ModelGroup ||- -{ "ModelGroupId" ModelOperationHistory
+ElementTypes - -{ ElementTypes
+ElementTypes ||- -{ "ElementType" ModelElement
+ModelOperationHistory "OperationId" }- -|| "Id" ModelOperation
+ModelOperationHistory "CategoryId" }- -|| "Id" ModelManifestCategory
+ModelManifestCategory ||- -{ "CategoryId" ModelManifest
+
+Entity axIdAllocsTable {
+  *ElementHandle [INT, not null]
+  ..
+  AxId [INT]
+}
+
+Entity AxIdAsk {
+  *ID [INT, not null, increment]
+  ..
+  ElementType [INT, not null]
+  ElementHandle [INT, not null]
+  AxIdAsk [INT, not null]
+  AxIdGet [INT]
+}
+
+Entity existingPaths {
+  ID [INT, not null, increment]
+  ..
+  mPath [NVARCHAR 1024, not null]
+  pathChecksum [INT]
+  ParentHandle [INT, not null]
+  ElementHandle [INT, not null]
+  NewHandle [INT]
+  RootHandle [INT, not null]
+}
+
+Entity newPaths {
+  ID [INT, not null, increment]
+  ..
+  mPath [NVARCHAR 1024, not null]
+  pathChecksum [INT]
+  ParentHandle [INT, not null]
+  ElementHandle [INT, not null]
+  NewHandle [INT]
+  RootHandle [INT, not null]
+}
+
+Entity SchemaVersion {
+  VersionMajor [INT, not null]
+  VersionMinor [INT, not null]
+  ..
+  BuildVersion [NVARCHAR 40, not null, default: ""]
+}
+
+Entity GlobalFieldIdPool {
+  *TableName [NVARCHAR 255, not null]
+  *TableHandle [INT, not null]
+  *AxId [INT, not null]
+  ==
+}
+
+Entity SYSXPPASSEMBLY {
+  RECID [BIGINT, not null]
+  ..
+  FILENAME [NVARCHAR 259, not null, default: ""]
+  HASHCODE [VARBINARY MAX, default: NULL]
+  "FILE_" [VARBINARY MAX, default: NULL]
+  VERSION [NVARCHAR 30, not null, default: ""]
+  ISDEBUG [INT, not null]
+  MODIFIEDDATETIME [DATETIME, not null]
+  MODIFIEDBY [NVARCHAR 8, not null, default: "?"]
+  CREATEDDATETIME [DATETIME, not null]
+  CREATEDBY [NVARCHAR 8, not null, default: "?"]
+  RECVERSION [INT, not null, default: 1]
+}
+
+Entity "__ModelStoreExtendedAttributes" {
+  Name [NVARCHAR 40, not null]
+  ..
+  Value [NVARCHAR 40, not null, default: ""]
+}
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 19:16:42 MSK 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1251
+Language: en
+Country: US
+--></g></svg>

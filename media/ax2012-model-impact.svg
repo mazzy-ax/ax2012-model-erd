@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="388px" preserveAspectRatio="none" style="width:753px;height:388px;background:#FFFFFF;" version="1.1" viewBox="0 0 753 388" width="753px" zoomAndPan="magnify"><defs><filter height="300%" id="fipbk8adtdevf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="177" x="281.5" y="18.6855">AX 2012 model impact</text><!--MD5=[bd195b15da2e92452613380e225ab24f]
+cluster ax--><path d="M470,188.6406 C470,178.6406 551,178.6406 551,178.6406 C551,178.6406 632,178.6406 632,188.6406 L632,283.6406 C632,293.6406 551,293.6406 551,293.6406 C551,293.6406 470,293.6406 470,283.6406 L470,188.6406 " fill="#FFFFFF" filter="url(#fipbk8adtdevf)" style="stroke:#000000;stroke-width:1.5;"/><path d="M470,188.6406 C470,198.6406 551,198.6406 551,198.6406 C551,198.6406 632,198.6406 632,188.6406 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="16" x="543" y="215.1738">ax</text><!--MD5=[5d4cd377749310b66bf14896f5cd8d9b]
+cluster model--><path d="M219,188.6406 C219,178.6406 332.5,178.6406 332.5,178.6406 C332.5,178.6406 446,178.6406 446,188.6406 L446,283.6406 C446,293.6406 332.5,293.6406 332.5,293.6406 C332.5,293.6406 219,293.6406 219,283.6406 L219,188.6406 " fill="#FFFFFF" filter="url(#fipbk8adtdevf)" style="stroke:#000000;stroke-width:1.5;"/><path d="M219,188.6406 C219,198.6406 332.5,198.6406 332.5,198.6406 C332.5,198.6406 446,198.6406 446,188.6406 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="311" y="215.1738">model</text><!--MD5=[fa4c0c1d3148d0fb43abf6304aba2b54]
+cluster ax2012--><polygon fill="#FFFFFF" filter="url(#fipbk8adtdevf)" points="16,28.6406,70,28.6406,77,52.25,736,52.25,736,128.6406,16,128.6406,16,28.6406" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="77" y1="52.25" y2="52.25"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="20" y="45.1738">ax2012</text><!--MD5=[880837bdb4f96112687cfa84d9836617]
+entity Business data--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="129" x="486.5" y="229.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="595.5" y="234.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593.5" y="236.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593.5" y="240.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="501.5" y="264.1738">Business data</text><!--MD5=[f04d1115a9404fce8f0faf89e2d614ba]
+entity Views--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="76" x="235" y="229.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="291" y="234.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="289" y="236.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="289" y="240.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="250" y="264.1738">Views</text><!--MD5=[61cd25fba67235613b8afc34aee24c96]
+entity Tables--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="83" x="346.5" y="229.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="409.5" y="234.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="407.5" y="236.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="407.5" y="240.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="361.5" y="264.1738">Tables</text><!--MD5=[0ecd579b94b5f51ba0c6012111a3b28f]
+entity Data--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="70" x="650" y="64.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="700" y="69.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="698" y="71.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="698" y="75.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="665" y="99.1738">Data</text><!--MD5=[5b44857a86e71e185c5259a9221df975]
+entity Business logic--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="130" x="485" y="64.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="595" y="69.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593" y="71.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593" y="75.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="500" y="99.1738">Business logic</text><!--MD5=[a2854ab1c354edfab1104a6080f82fcb]
+entity Access rights--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="124" x="326" y="64.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="430" y="69.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="428" y="71.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="428" y="75.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="341" y="99.1738">Access rights</text><!--MD5=[8ed908acddeca4cd2d8bc1ef260a9dd3]
+entity SysModel*--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="106" x="185" y="64.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="271" y="69.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="269" y="71.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="269" y="75.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="200" y="99.1738">SysModel*</text><!--MD5=[c4185e21a0cedec363a01283c8ab6977]
+entity UtilElements--><rect fill="#FEFECE" filter="url(#fipbk8adtdevf)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="117" x="32.5" y="64.6406"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="129.5" y="69.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="127.5" y="71.6406"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="127.5" y="75.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="47.5" y="99.1738">UtilElements</text><!--MD5=[ae4324dc1d7012c1f65f87688801fdbb]
+entity axUtil.exe--><polygon fill="#FFFFFF" filter="url(#fipbk8adtdevf)" points="332.5,340.6406,419.5,340.6406,426.5,364.25,443.5,364.25,443.5,381.25,332.5,381.25,332.5,340.6406" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="332.5" x2="426.5" y1="364.25" y2="364.25"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="69" x="342.5" y="358.1738">axUtil.exe</text><!--MD5=[7c9bf39bd63bb2dfa385614edd98ce07]
+link Tables to Views--><path d="M346.29,253.6406 C336.33,253.6406 326.36,253.6406 316.39,253.6406 " fill="none" id="Tables-to-Views" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="311.18,253.6406,320.18,257.6406,316.18,253.6406,320.18,249.6406,311.18,253.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bcffb8130a9c09eea059e10e7c9ba75a]
+link Tables to Business logic--><path d="M411.01,229.4906 C440.67,199.6506 492.13,147.8706 523.42,116.3806 " fill="none" id="Tables-to-Business logic" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="527.13,112.6506,517.9448,116.2047,523.6016,116.1933,523.613,121.8501,527.13,112.6506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6a8f8d1be43b80c362532b60ed93a4a4]
+link Tables to Business data--><path d="M429.55,253.6406 C445.2,253.6406 463.45,253.6406 480.98,253.6406 " fill="none" id="Tables-to-Business data" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="486.39,253.6406,477.39,249.6406,481.39,253.6406,477.39,257.6406,486.39,253.6406" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="454.5" y="247.1357">?</text><!--MD5=[22e77ed2719af0ce65ac230cbfba5767]
+reverse link Access rights to Tables--><path d="M388,117.9406 C388,149.5506 388,200.1306 388,229.4906 " fill="none" id="Access rights-backto-Tables" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="388,112.6506,384,121.6506,388,117.6506,392,121.6506,388,112.6506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7f525251dbc2c12ef1ad6ec7054cd514]
+reverse link Tables to axUtil.exe--><path d="M388,282.7906 C388,301.0406 388,324.3406 388,340.5806 " fill="none" id="Tables-backto-axUtil.exe" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="388,277.7906,384,286.7906,388,282.7906,392,286.7906,388,277.7906" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[868f6ce9b1c4bf1adec5bd431c1966f1]
+reverse link SysModel* to Views--><path d="M243.99,117.5506 C250.77,149.1306 261.7,200.0106 268.03,229.4906 " fill="none" id="SysModel*-backto-Views" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242.94,112.6506,240.9069,122.2873,243.9837,117.5405,248.7306,120.6174,242.94,112.6506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[178e82f509b2d9a5aee81c3302400923]
+reverse link UtilElements to Views--><path d="M120.43,116.0006 C155.55,147.4506 213.69,199.5206 247.15,229.4906 " fill="none" id="UtilElements-backto-Views" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="116.69,112.6506,120.7401,121.6282,120.4199,115.9804,126.0677,115.6603,116.69,112.6506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2e6222896bd58d72aa367a56bdfe796b]
+reverse link Data to Business data--><path d="M662.7,116.7706 C636.78,148.2906 594.47,199.7706 570.03,229.4906 " fill="none" id="Data-backto-Business data" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="666.09,112.6506,657.2843,117.062,662.9145,116.5128,663.4638,122.1429,666.09,112.6506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e334d251b20ec485e76a2837384e7431]
+link Business logic to Data--><path d="M615.13,88.6406 C624.97,88.6406 634.81,88.6406 644.65,88.6406 " fill="none" id="Business logic-to-Data" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="649.79,88.6406,640.79,84.6406,644.79,88.6406,640.79,92.6406,649.79,88.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f9d5eed3612b2244b73f527fa5a96e77]
+link Business logic to Business data--><path d="M550.14,112.6506 C550.32,141.9306 550.63,192.5106 550.83,224.1906 " fill="none" id="Business logic-to-Business data" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="550.86,229.4906,554.7827,220.4567,550.8171,224.4908,546.783,220.5252,550.86,229.4906" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="551" y="159.1357">?</text><!--MD5=[bca9cf6c1abf1d940b0b7a1750aa76e4]
+@startuml ax2012-model-impact
+
+title AX 2012 model impact
+
+database ax {
+  [Business data]
+}
+
+database model {
+  [Views]
+  [Tables]
+}
+
+package ax2012 {
+  [Data]
+  [Business logic]
+  [Access rights]
+  [SysModel*]
+  [UtilElements]
+}
+
+package axUtil.exe  {
+
+}
+
+[Tables] -right-> [Views]
+[Tables] -right-> [Business logic]
+[Tables] -right-> [Business data] : ?
+[Tables] -up-> [Access rights]
+[Tables] <- - axUtil.exe
+[Views] -up-> [SysModel*]
+[Views] -up-> [UtilElements]
+[Business data] -up-> [Data]
+[Business logic] -right-> [Data]
+[Business logic] - -> [Business data] : ?
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 19:16:42 MSK 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1251
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,265 @@
+' основные таблицы и их связи из базы данных ax2012_model
+' актуальная версия файла: https://github.com/mazzy-ax/ax2012-model-erd/model.plantuml
+' получить графическое представление диаграмы: https://plantuml.com/class-diagram
+
+@startuml ax2012-model-erd
+
+remove @unlinked
+hide circle
+
+title
+AX 2012 model - AOT nodes only
+Kernel version 6.3.6000.11008
+end title
+
+
+Entity ElementTypes {
+  *ElementType [INT, not null]
+  ..
+  *ElementTypeName [VARCHAR 40, not null]
+  ParentType [INT, default: 0]
+  TreeNodeName [VARCHAR 255]
+}
+
+Entity Layer {
+  *Id [INT, not null]
+  ..
+  Name [NVARCHAR 3, not null]
+}
+
+Entity LayerVersioning {
+  *LayerId [INT, not null, default: 14]
+  ..
+  AggregatedVersionNumber [INT, not null]
+  CheckDigit [INT, not null]
+  ConsistencyData [VARBINARY MAX]
+  IsDirty [INT]
+}
+
+Entity Model {
+  *Id [INT, not null]
+  ..
+  LayerId [INT, not null]
+  State [NVARCHAR 20, not null, default: ""]
+  CreatedDateTime [DATETIME, not null]
+  ModifiedDateTime [DATETIME, not null]
+  ModelGroupId [INT]
+  MarkedForRemoval [BIT, not null]
+  InstalledBy [NVARCHAR 20]
+  ChangedBy [NVARCHAR 20]
+  IsDirty [INT]
+  ==
+  *(Id, LayerId) [unique]
+}
+
+Entity ModelElement {
+  *ElementHandle [INT, not null, increment]
+  ..
+  ElementType [INT, not null]
+  *RootHandle [INT, not null]
+  ParentHandle [INT, not null]
+  Name [NVARCHAR 255, not null, default: ""]
+  AxId [INT, not null]
+  ParentId [INT, default: 0]
+  Origin [UNIQUEIDENTIFIER]
+  PartOfInheritance [INT, not null]
+  ==
+  *(ElementType, AxId, ParentHandle, Name) [unique]
+  *(ElementType, Name, ParentHandle) [unique]
+}
+
+Entity ModelElementData {
+  *ElementHandle [INT, not null]
+  *LayerId [INT, not null]
+  ..
+  ParentHandle [INT, not null]
+  LegacyId [INT]
+  Properties [VARBINARY MAX]
+  FileHeader [VARBINARY MAX]
+  BASEVERSION [INT, not null, default: 1]
+  VERSION [INT, not null, default: 1]
+  SAVECOUNT [INT, not null, default: 1]
+  CONSISTENCYDATA [INT, not null, default: 1]
+  MODIFIEDDATETIME [DATETIME, not null]
+  MODIFIEDBY [NVARCHAR 8, not null, default: "?"]
+  CREATEDDATETIME [DATETIME, not null]
+  CREATEDBY [NVARCHAR 8, not null, default: "?"]
+  ElementVersion [INT, not null, default: 1]
+  ModelId [INT, not null]
+}
+
+Entity ModelElementLabel {
+  *ElementHandle [INT, not null]
+  *LayerId [INT, not null]
+  *LabelId [INT, not null]
+  ..
+  Text [NVARCHAR 2048, not null, default: ""]
+  Comment [NVARCHAR 2048, not null, default: ""]
+  Module [NVARCHAR 255, not null, default: ""]
+  Language [NVARCHAR 255, not null, default: ""]
+}
+
+Entity ModelGroup {
+  *Id [INT, not null]
+}
+
+Entity ModelManifest {
+  *Id [INT, not null]
+  ..
+  ModelId [INT, not null]
+  Name [NVARCHAR 40, not null]
+  DisplayName [NVARCHAR 40, not null]
+  Description [NVARCHAR 255]
+  Publisher [NVARCHAR 40, not null]
+  Signed [BIT, not null]
+  CategoryId [INT, not null]
+  InstallMode [INT, not null]
+  VersionMajor [INT, not null]
+  VersionMinor [INT, not null]
+  VersionRevision [INT, not null]
+  VersionBuildNo [INT, not null]
+  Details [XML, not null, default: ""]
+  ==
+  *(Name, Publisher) [unique]
+}
+
+Entity ModelManifestCategory {
+  *Id [INT, not null]
+  ..
+  *Name [NVARCHAR 20, not null]
+}
+
+Entity ModelOperation {
+  *Id [INT, not null]
+  ..
+  Name [NVARCHAR 20, not null]
+}
+
+Entity ModelOperationHistory {
+  *Id [INT, not null, increment]
+  ..
+  OperationId [INT, not null]
+  OperationDateTime [DATETIME, not null]
+  ModelManifestId [INT, not null]
+  Name [NVARCHAR 40, not null]
+  DisplayName [NVARCHAR 40, not null]
+  Description [NVARCHAR 255]
+  Publisher [NVARCHAR 40, not null]
+  Signed [BIT, not null]
+  CategoryId [INT, not null]
+  InstallMode [INT, not null]
+  VersionMajor [INT, not null]
+  VersionMinor [INT, not null]
+  VersionRevision [INT, not null]
+  VersionBuildNo [INT, not null]
+  Details [XML, not null]
+  ModelId [INT, not null]
+  LayerId [INT, not null]
+  State [NVARCHAR 20, not null]
+  CreatedDateTime [DATETIME, not null]
+  ModifiedDateTime [DATETIME, not null]
+  ModelGroupId [INT]
+  MarkedForRemoval [BIT, not null]
+  InstalledBy [NVARCHAR 20]
+  ChangedBy [NVARCHAR 20]
+  IsDirty [INT]
+}
+
+Entity Sources {
+  *SourceHandle [INT, not null]
+  *LayerId [INT, not null]
+  ..
+  SourceText [VARBINARY MAX]
+}
+
+LayerVersioning "LayerId" |o--|| Layer
+Layer ||--{ "LayerId" Model
+Layer ||--{ "LayerId" ModelOperationHistory
+Model ||--|| "ModelId" ModelManifest
+Model "Id, LayerId" ||--{ "ModelId, LayerId" ModelElementData : [update: cascade]
+ModelElement --{ ModelElement
+ModelElement ||--{ "ElementHandle" ModelElementData : [delete: cascade]
+ModelElementData --o{ ModelElementData : there are elements\n whose parent specified\n in the ModelElement\n only !!!
+ModelElementData "ElementHandle, LayerId" ||--o| "ElementHandle, LayerId" ModelElementLabel : [delete: cascade]\n [update: cascade]
+ModelElementData "ElementHandle, LayerId" ||--o| "SourceHandle, LayerId" Sources : [delete: cascade]\n [update: cascade]
+ModelGroup ||--{ "ModelGroupId" Model
+ModelGroup ||--{ "ModelGroupId" ModelOperationHistory
+ElementTypes --{ ElementTypes
+ElementTypes ||--{ "ElementType" ModelElement
+ModelOperationHistory "OperationId" }--|| "Id" ModelOperation
+ModelOperationHistory "CategoryId" }--|| "Id" ModelManifestCategory
+ModelManifestCategory ||--{ "CategoryId" ModelManifest
+
+Entity axIdAllocsTable {
+  *ElementHandle [INT, not null]
+  ..
+  AxId [INT]
+}
+
+Entity AxIdAsk {
+  *ID [INT, not null, increment]
+  ..
+  ElementType [INT, not null]
+  ElementHandle [INT, not null]
+  AxIdAsk [INT, not null]
+  AxIdGet [INT]
+}
+
+Entity existingPaths {
+  ID [INT, not null, increment]
+  ..
+  mPath [NVARCHAR 1024, not null]
+  pathChecksum [INT]
+  ParentHandle [INT, not null]
+  ElementHandle [INT, not null]
+  NewHandle [INT]
+  RootHandle [INT, not null]
+}
+
+Entity newPaths {
+  ID [INT, not null, increment]
+  ..
+  mPath [NVARCHAR 1024, not null]
+  pathChecksum [INT]
+  ParentHandle [INT, not null]
+  ElementHandle [INT, not null]
+  NewHandle [INT]
+  RootHandle [INT, not null]
+}
+
+Entity SchemaVersion {
+  VersionMajor [INT, not null]
+  VersionMinor [INT, not null]
+  ..
+  BuildVersion [NVARCHAR 40, not null, default: ""]
+}
+
+Entity GlobalFieldIdPool {
+  *TableName [NVARCHAR 255, not null]
+  *TableHandle [INT, not null]
+  *AxId [INT, not null]
+  ==
+}
+
+Entity SYSXPPASSEMBLY {
+  RECID [BIGINT, not null]
+  ..
+  FILENAME [NVARCHAR 259, not null, default: ""]
+  HASHCODE [VARBINARY MAX, default: NULL]
+  "FILE_" [VARBINARY MAX, default: NULL]
+  VERSION [NVARCHAR 30, not null, default: ""]
+  ISDEBUG [INT, not null]
+  MODIFIEDDATETIME [DATETIME, not null]
+  MODIFIEDBY [NVARCHAR 8, not null, default: "?"]
+  CREATEDDATETIME [DATETIME, not null]
+  CREATEDBY [NVARCHAR 8, not null, default: "?"]
+  RECVERSION [INT, not null, default: 1]
+}
+
+Entity "__ModelStoreExtendedAttributes" {
+  Name [NVARCHAR 40, not null]
+  ..
+  Value [NVARCHAR 40, not null, default: ""]
+}
+
+@enduml

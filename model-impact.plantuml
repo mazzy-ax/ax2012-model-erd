@@ -1,0 +1,41 @@
+' влияние модели из базы данных моделей на приложение ax2012
+' актуальная версия файла: https://github.com/mazzy-ax/ax2012-model-erd/model-forwarding.plantuml
+' получить графическое представление диаграмы: https://plantuml.com/class-diagram
+
+@startuml ax2012-model-impact
+
+title AX 2012 model impact
+
+database ax {
+  [Business data]
+}
+
+database model {
+  [Views]
+  [Tables]
+}
+
+package ax2012 {
+  [Data]
+  [Business logic]
+  [Access rights]
+  [SysModel*]
+  [UtilElements]
+}
+
+package axUtil.exe  {
+
+}
+
+[Tables] -right-> [Views]
+[Tables] -right-> [Business logic]
+[Tables] -right-> [Business data] : ?
+[Tables] -up-> [Access rights]
+[Tables] <-- axUtil.exe
+[Views] -up-> [SysModel*]
+[Views] -up-> [UtilElements]
+[Business data] -up-> [Data]
+[Business logic] -right-> [Data]
+[Business logic] --> [Business data] : ?
+
+@enduml
